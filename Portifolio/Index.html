@@ -4,38 +4,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+
     <title>Portfólio João Victor</title>
-    <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
-    <!-- Seção inicial -->
-    <section class="home">
-        <img src="João Victor.png" alt="Logo">
-        <a href="#sobre">Sobre Mim</a>
-        <a href="#form">Adquira seu projeto</a>
 
-        <a href="https://www.instagram.com/_srjuao/" target="_blank">
-            <img src="instagram_6422200.png" alt="Meu insta" width="200">
+    <header class="header">
+        <img src="./imgs/logo.png" alt="Logo" class="logo">
+        <nav class=" nav ">
+            <a class="botao " href="#sobre ">Sobre Mim</a>
+            <a class="botao " href="#projetos ">Projetos</a>
+            <a class="botao " href="#form ">Adquira Já</a>
+        </nav>
 
-            <a href="https://www.linkedin.com/in/joão-victor-rodrigues-de-oliveira-2918b0253/" target="_blank">
-                <img src="linkedin_6422202.png" alt="Meu insta" width="200">
+        <div class="redes">
+            <a class="icone " href="https://www.instagram.com/_srjuao/ " target="_blank ">
+                <img src="./imgs/instagram_794384.png " alt="Instagram ">
+            </a>
+            <a class="icone " href="https://www.linkedin.com/in/joão-victor-rodrigues-de-oliveira-2918b0253/ " target="_blank ">
+                <img src="./imgs/social_13480311.png " alt="LinkedIn ">
+            </a>
+            <a class="icone " href="https://github.com/srjuao " target="_blank ">
+                <img src="./imgs/github_779088.png " alt="GitHub ">
+            </a>
+        </div>
+    </header>
+    <!--Seção de Sobre-->
+    <section id="sobre" class="sobre">
+        <div class="container">
+            <!-- Coluna de texto -->
+            <div class="texto">
+                <h1 id="ID">Eleve sua presença digital com soluções Front-End criativas e impactantes!</h1>
+                <p id="P1">
+                    Eu transformo ideias em interfaces interativas e modernas que encantam usuários e impulsionam marcas. Com um portfólio repleto de projetos inovadores, trago experiências que combinam design de qualidade e performance técnica. Vamos colaborar para criar
+                    experiências digitais que se destacam e façam sua marca brilhar online!
+                </p>
+                <a href="#form" class="botao-cta">Faça Já Sua Cotação</a>
+            </div>
 
-                <a href="https://github.com/srjuao" target="_blank">
-                    <img src="github_6424084.png" 0 alt="Meu insta" width="200">
+            <!-- Coluna de imagem -->
+            <div class="imagem">
+                <img src="imgs/João Victor (3).png" alt="jv" class="jv">
+            </div>
+        </div>
+    </section>
+
+    <!--sessão de Projetos-->
+    <section id="projetos " class="projetos ">
+        <div class="projects ">
+            <h1 id="textp ">Projetos</h1>
+            <div class="poject1 ">
+                <a href="... " target="... ">
+                    <img src="./imgs/Captura de tela 2025-04-16 152908.png" alt=" ">
+                </a>
+                <a href="... " target="... ">
+                    <img src=" " alt=" ">
                 </a>
 
-    </section>
-    <!--Seção de Sobre-->
-    <section id="sobre" class=" sobre ">
-        <h1>Olá Seja Bem Vindo Ao Meu Portfólio</h1>
-        <p>Meu nome é João victor, tenho 20 Anos e sou apaixonado por Desenvolvimento Web!</p>
-        <p> entrei nesse mundo aos meus 18 anos quando ingressei na Unigoias no curso de analise e desenvolvimento de sistemas</p>
-        <img src="Design sem nome.png " alt="Imagem de João Victor ">
+                <a href="... " target="... ">
+                    <img src=" " alt=" ">
+                </a>
+                <a href="... " target="... ">
+                    <img src=" " alt=" ">
+                </a>
+                <a href="... " target="... ">
+                    <img src=" " alt=" ">
+                </a>
+            </div>
+        </div>
+        </div>
+        </div>
+
+
+
 
     </section>
     <!-- Seção de formulário -->
-    <section id="form" class=" formulario ">
+    <section id="form " class=" formulario ">
         <h2>Cadastre-se para adquirir seu projeto</h2>
         <form class="formulario-pagamento " action="coleta_dados.php " method="POST ">
             <label for="name ">Nome:</label>
