@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "serve Portifolio -s"
+    "start": "serve Portifolio Index.html -s"
   },
   "repository": {
     "type": "git",
