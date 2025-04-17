@@ -330,7 +330,7 @@ nav.nav .botao:hover {
          Telas Maiores
          =============================== */
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1300px) {
     body {
         font-size: 1rem;
         padding: 0;
