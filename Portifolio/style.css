@@ -176,13 +176,12 @@ nav.nav .botao:hover {
 
 .projetos .projects {
     text-align: center;
-    color: white;
 }
 
 .projetos h1 {
     font-size: 1.8rem;
     margin-bottom: 1rem;
-    color: var(--violet);
+    color: white;
 }
 
 .poject1 {
