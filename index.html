@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fluxoapps | Automação e Inteligência para Empresas</title>
+    <meta name="description" content="Transforme seus sistemas em uma operação inteligente e automatizada. A Fluxoapps conecta, organiza e automatiza tudo que sua empresa já usa.">
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="shortcut icon" type="image/png" href="logo.png">
+    <link rel="apple-touch-icon" href="logo.png">
+    <meta name="theme-color" content="#0A0A0A">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="liquid-ether.js"></script>
+</head>
+<body>
+    
+    <!-- Liquid Ether Background -->
+    <div id="liquid-bg"></div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <img src="logo.png" alt="Fluxoapps Logo" class="logo-img">
+                <span>Fluxoapps</span>
+            </div>
+            <nav class="nav">
+                <a href="#problema">O Problema</a>
+                <a href="#solucao">Nossa Solução</a>
+                <a href="#servicos">Serviços</a>
+            </nav>
+            <div class="header-actions">
+                <a href="#cta" class="btn btn-outline desktop-only">Falar com especialista</a>
+                <button class="mobile-menu-btn" aria-label="Menu">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Modal Structure -->
+    <div class="modal-overlay" id="modal-overlay">
+        <div class="modal-container glass-card">
+            <button class="modal-close"><i data-lucide="x"></i></button>
+            <div class="modal-content" id="modal-content">
+                <!-- Content will be injected by JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- 1. Hero -->
+    <section class="hero" id="home">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="badge">Inovação em Operações</div>
+                <h1 class="hero-title">Transforme seus sistemas em uma <span>operação inteligente</span> e automatizada</h1>
+                <p class="hero-subtitle">A Fluxoapps conecta, organiza e automatiza tudo que sua empresa já usa. Escale seus resultados sem aumentar a complexidade.</p>
+                <div class="hero-actions">
+                    <a href="#cta" class="btn btn-primary">Agendar demonstração <i data-lucide="arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="glass-card dashboard-mockup">
+                    <div class="mockup-header">
+                        <div class="dots"><span></span><span></span><span></span></div>
+                    </div>
+                    <div class="mockup-body">
+                        <div class="chart-area">
+                            <div class="chart-bar" style="height: 40%"></div>
+                            <div class="chart-bar" style="height: 60%"></div>
+                            <div class="chart-bar" style="height: 30%"></div>
+                            <div class="chart-bar" style="height: 80%"></div>
+                            <div class="chart-bar highlight" style="height: 100%"></div>
+                        </div>
+                        <div class="automation-flow">
+                            <div class="node"><i data-lucide="database"></i></div>
+                            <div class="line"></div>
+                            <div class="node pulse"><i data-lucide="cpu"></i></div>
+                            <div class="line"></div>
+                            <div class="node highlight"><i data-lucide="trending-up"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="glow-effect"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. Problema -->
+    <section class="problem" id="problema">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>Seu crescimento está sendo travado por operações ineficientes?</h2>
+                <p>Muitas empresas perdem tempo e dinheiro por não terem seus processos alinhados.</p>
+            </div>
+            <div class="problem-grid">
+                <div class="problem-card">
+                    <div class="icon-box red"><i data-lucide="unlink"></i></div>
+                    <h3>Sistemas Desconectados</h3>
+                    <p>Ferramentas que não conversam entre si, forçando o retrabalho e a duplicação de informações.</p>
+                </div>
+                <div class="problem-card">
+                    <div class="icon-box red"><i data-lucide="clock"></i></div>
+                    <h3>Processos Manuais e Lentos</h3>
+                    <p>Sua equipe gasta horas em tarefas repetitivas que poderiam ser resolvidas em segundos.</p>
+                </div>
+                <div class="problem-card">
+                    <div class="icon-box red"><i data-lucide="eye-off"></i></div>
+                    <h3>Falta de Visão dos Dados</h3>
+                    <p>Decisões baseadas em "achismos" porque os dados estão espalhados e desorganizados.</p>
+                </div>
+                <div class="problem-card">
+                    <div class="icon-box red"><i data-lucide="file-spreadsheet"></i></div>
+                    <h3>Dependência de Planilhas</h3>
+                    <p>Operações inteiras sustentadas por planilhas frágeis que podem quebrar a qualquer momento.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Solução -->
+    <section class="solution" id="solucao">
+        <div class="container solution-container">
+            <div class="solution-visual">
+                <div class="circle-network">
+                    <div class="center-node">
+                        <img src="logo.png" alt="Fluxoapps" class="center-logo">
+                    </div>
+                    <div class="orbit-node node-1" data-target="chat"><i data-lucide="message-square"></i></div>
+                    <div class="orbit-node node-2" data-target="pagamento"><i data-lucide="credit-card"></i></div>
+                    <div class="orbit-node node-3" data-target="email"><i data-lucide="mail"></i></div>
+                    <div class="orbit-node node-4" data-target="agenda"><i data-lucide="calendar"></i></div>
+                </div>
+            </div>
+            <div class="solution-content">
+                <h2 class="section-title">Nós criamos o cérebro da sua operação</h2>
+                <p class="section-desc">Integramos seus sistemas atuais, centralizamos seus dados e criamos automações que trabalham 24/7 por você. Não somos apenas desenvolvedores — somos seus parceiros estratégicos de eficiência.</p>
+                <ul class="feature-list">
+                    <li><i data-lucide="circle-check-big"></i> <strong>Integramos seus sistemas:</strong> Tudo conectado e sincronizado em tempo real.</li>
+                    <li><i data-lucide="circle-check-big"></i> <strong>Base de dados inteligente:</strong> Informação centralizada, segura e acessível.</li>
+                    <li><i data-lucide="circle-check-big"></i> <strong>Painéis personalizados:</strong> Controle total através de dashboards intuitivos.</li>
+                    <li><i data-lucide="circle-check-big"></i> <strong>Automações sob medida:</strong> A tecnologia executa os processos por você.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Como Funciona -->
+    <section class="how-it-works">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>Como transformamos seu negócio</h2>
+                <p>Um método testado para levar sua empresa para o próximo nível operacional.</p>
+            </div>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">01</div>
+                    <h3>Diagnóstico da Operação</h3>
+                    <p>Mapeamos seus processos atuais e identificamos os gargalos e oportunidades de automação.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">02</div>
+                    <h3>Integração dos Dados</h3>
+                    <p>Conectamos as ferramentas que você já usa e centralizamos as informações de forma segura.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">03</div>
+                    <h3>Desenvolvimento do Sistema</h3>
+                    <p>Criamos as lógicas, painéis e rotinas personalizadas focadas no seu fluxo de trabalho.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">04</div>
+                    <h3>Automação & Melhorias</h3>
+                    <p>Colocamos as automações para rodar e escalamos os resultados com melhorias contínuas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Serviços -->
+    <section class="services" id="servicos">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>Nossos Serviços</h2>
+                <p>Soluções tecnológicas focadas em eficiência e escala.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card glass-card">
+                    <i data-lucide="plug" class="service-icon"></i>
+                    <h3>Integração de Sistemas</h3>
+                    <p>Conectamos ERPs, CRMs e plataformas variadas para eliminar o trabalho manual de transferência de dados.</p>
+                </div>
+                <div class="service-card glass-card">
+                    <i data-lucide="code" class="service-icon"></i>
+                    <h3>Sistemas Personalizados</h3>
+                    <p>Desenvolvimento de soluções sob medida para resolver dores específicas do seu modelo de negócio.</p>
+                </div>
+                <div class="service-card glass-card">
+                    <i data-lucide="bot" class="service-icon"></i>
+                    <h3>Automação de Processos</h3>
+                    <p>Bots, integrações com WhatsApp e fluxos automáticos que funcionam de forma invisível e perfeita.</p>
+                </div>
+                <div class="service-card glass-card">
+                    <i data-lucide="layout-dashboard" class="service-icon"></i>
+                    <h3>Dashboards Inteligentes</h3>
+                    <p>Painéis em tempo real com os indicadores mais importantes para tomada de decisão rápida e precisa.</p>
+                </div>
+                <div class="service-card glass-card">
+                    <i data-lucide="cloud" class="service-icon"></i>
+                    <h3>Desenvolvimento de SaaS</h3>
+                    <p>Se você tem uma ideia de produto, nós transformamos em um software na nuvem pronto para o mercado.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Diferenciais -->
+    <section class="differentiators">
+        <div class="container diff-container">
+            <div class="diff-content">
+                <h2 class="section-title">Por que escolher a Fluxoapps?</h2>
+                <div class="diff-items">
+                    <div class="diff-item">
+                        <div class="diff-icon"><i data-lucide="ruler"></i></div>
+                        <div>
+                            <h4>Soluções 100% Sob Medida</h4>
+                            <p>Não vendemos caixas prontas. Entendemos o seu negócio e criamos exatamente o que você precisa.</p>
+                        </div>
+                    </div>
+                    <div class="diff-item">
+                        <div class="diff-icon"><i data-lucide="target"></i></div>
+                        <div>
+                            <h4>Foco em Resultado e Escala</h4>
+                            <p>Nossa tecnologia é um meio para um fim: fazer você ganhar tempo, reduzir custos e crescer.</p>
+                        </div>
+                    </div>
+                    <div class="diff-item">
+                        <div class="diff-icon"><i data-lucide="puzzle"></i></div>
+                        <div>
+                            <h4>Aproveitamos seu Ecossistema</h4>
+                            <p>Você não precisa jogar fora o que já usa. Nós nos conectamos aos seus sistemas atuais.</p>
+                        </div>
+                    </div>
+                    <div class="diff-item">
+                        <div class="diff-icon"><i data-lucide="zap"></i></div>
+                        <div>
+                            <h4>Automação Real (Não só teoria)</h4>
+                            <p>Entregamos soluções funcionando na prática, resolvendo o problema no dia a dia da operação.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="diff-image">
+                <div class="code-window glass-card">
+                    <div class="window-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <div class="window-body">
+                        <pre><code><span class="keyword">const</span> <span class="variable">operation</span> = <span class="keyword">new</span> <span class="class">FluxoappsEngine</span>();
+<span class="keyword">await</span> operation.<span class="method">integrate</span>({
+  systems: [<span class="string">'ERP'</span>, <span class="string">'CRM'</span>, <span class="string">'WhatsApp'</span>]
+});
+
+<span class="keyword">while</span> (business.<span class="property">isGrowing</span>) {
+  operation.<span class="method">automate</span>();
+  operation.<span class="method">scale</span>();
+  <span class="comment">// Mais eficiência, menos custos</span>
+}</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Prova / Autoridade -->
+    <section class="proof">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>Resultados que Falam por Si</h2>
+                <p>Empresas que já transformaram suas operações com a Fluxoapps.</p>
+            </div>
+            
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3 class="stat-number">+85%</h3>
+                    <p>Agilidade em processos internos</p>
+                </div>
+                <div class="stat-card">
+                    <h3 class="stat-number">-60%</h3>
+                    <p>De tempo gasto em tarefas manuais</p>
+                </div>
+                <div class="stat-card">
+                    <h3 class="stat-number">100%</h3>
+                    <p>Integração de dados garantida</p>
+                </div>
+            </div>
+
+            <div class="testimonials">
+                <div class="testimonial-card glass-card">
+                    <div class="stars">
+                        <i data-lucide="star" class="filled"></i><i data-lucide="star" class="filled"></i><i data-lucide="star" class="filled"></i><i data-lucide="star" class="filled"></i><i data-lucide="star" class="filled"></i>
+                    </div>
+                    <p class="quote">"A Fluxoapps uniu nosso sistema de agendamento com nosso financeiro e WhatsApp. O que antes precisava de 3 pessoas para gerenciar, hoje roda de forma 100% automática. Foi um divisor de águas para nossa escala."</p>
+                    <div class="author">
+                        <div class="avatar">FC</div>
+                        <div>
+                            <strong>Diretoria Operacional</strong>
+                            <span>Fluxo Clínicas</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card glass-card">
+                    <div class="stars">
+                        <i data-lucide="star" class="filled"></i><i data-lucide="star" class="filled"></i><i data-lucide="star" class="filled"></i><i data-lucide="star" class="filled"></i><i data-lucide="star" class="filled"></i>
+                    </div>
+                    <p class="quote">"Não procurávamos apenas desenvolvedores, mas parceiros para pensar a inteligência do negócio. A visão estratégica e técnica deles é impecável."</p>
+                    <div class="author">
+                        <div class="avatar">RT</div>
+                        <div>
+                            <strong>Rafael Torres</strong>
+                            <span>CEO, TechLogistics</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. CTA Forte -->
+    <section class="cta-section" id="cta">
+        <div class="container">
+            <div class="cta-box glass-card">
+                <div class="cta-content text-center">
+                    <h2>Transforme sua operação agora</h2>
+                    <p>Pare de perder tempo com processos manuais e sistemas desconectados. Dê o primeiro passo rumo a uma operação inteligente e escalável.</p>
+                    <a href="https://wa.me/5562999284367" target="_blank" class="btn btn-primary btn-large">
+                        <i data-lucide="message-circle"></i> Agendar conversa
+                    </a>
+                </div>
+                <div class="glow-bg"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. Rodapé -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <div class="logo">
+                    <i data-lucide="layers" class="logo-icon"></i>
+                    <span>Fluxoapps</span>
+                </div>
+                <p>Transformando sistemas e dados em operações automatizadas e inteligentes.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Links Úteis</h3>
+                <a href="#home">Início</a>
+                <a href="#solucao">Soluções</a>
+                <a href="#servicos">Serviços</a>
+            </div>
+            <div class="footer-contact">
+                <h3>Contato</h3>
+                <p><i data-lucide="mail"></i> contato@fluxoapps.com.br</p>
+                <p><i data-lucide="phone"></i> (62) 99928-4367</p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/fluxoapps_/" target="_blank" rel="noopener noreferrer" aria-label="Instagram @fluxoapps_">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                        </svg>
+                    </a>
+                    <a href="https://wa.me/5562999284367" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.247-.694.247-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0 0 20.464 3.488"/>
+                        </svg>
+                    </a>
+                    <a href="mailto:contato@fluxoapps.com.br" aria-label="E-mail">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <rect width="20" height="16" x="2" y="4" rx="2"/>
+                            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/company/fluxoapps" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/>
+                            <rect x="2" y="9" width="4" height="12"/>
+                            <circle cx="4" cy="4" r="2"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <p>&copy; 2026 Fluxoapps. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
